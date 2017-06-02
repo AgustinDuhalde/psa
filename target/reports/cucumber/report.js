@@ -39,21 +39,21 @@ formatter.match({
   "location": "CategoriaSteps.que_la_tarea_no_tiene_categoria()"
 });
 formatter.result({
-  "duration": 124195104,
+  "duration": 111006707,
   "status": "passed"
 });
 formatter.match({
   "location": "CategoriaSteps.le_asigno_una_nueva_categoria()"
 });
 formatter.result({
-  "duration": 29854,
+  "duration": 32505,
   "status": "passed"
 });
 formatter.match({
   "location": "CategoriaSteps.la_tarea_queda_asignada_a_una_nueva_categoria()"
 });
 formatter.result({
-  "duration": 29605,
+  "duration": 32351,
   "status": "passed"
 });
 formatter.scenario({
@@ -83,21 +83,21 @@ formatter.match({
   "location": "CategoriaSteps.que_la_tarea_ya_tiene_una_categoria()"
 });
 formatter.result({
-  "duration": 45183,
+  "duration": 52662,
   "status": "passed"
 });
 formatter.match({
   "location": "CategoriaSteps.le_asigno_una_nueva_categoria()"
 });
 formatter.result({
-  "duration": 25098,
+  "duration": 31154,
   "status": "passed"
 });
 formatter.match({
   "location": "CategoriaSteps.la_tarea_queda_asignada_con_ambas_categorias()"
 });
 formatter.result({
-  "duration": 34871,
+  "duration": 34295,
   "status": "passed"
 });
 formatter.scenario({
@@ -127,21 +127,21 @@ formatter.match({
   "location": "CategoriaSteps.que_la_tarea_tiene_una_categoria()"
 });
 formatter.result({
-  "duration": 48976,
+  "duration": 90275,
   "status": "passed"
 });
 formatter.match({
   "location": "CategoriaSteps.le_borro_la_categoria()"
 });
 formatter.result({
-  "duration": 32415,
+  "duration": 40843,
   "status": "passed"
 });
 formatter.match({
   "location": "CategoriaSteps.la_tarea_queda_sin_categoria()"
 });
 formatter.result({
-  "duration": 29809,
+  "duration": 34249,
   "status": "passed"
 });
 formatter.scenario({
@@ -171,21 +171,21 @@ formatter.match({
   "location": "CategoriaSteps.que_la_tarea_no_tiene_una_categoria()"
 });
 formatter.result({
-  "duration": 61176,
+  "duration": 63446,
   "status": "passed"
 });
 formatter.match({
   "location": "CategoriaSteps.le_borro_la_categoria()"
 });
 formatter.result({
-  "duration": 26249,
+  "duration": 28323,
   "status": "passed"
 });
 formatter.match({
   "location": "CategoriaSteps.no_permito_borrar_categoria()"
 });
 formatter.result({
-  "duration": 30312,
+  "duration": 39640,
   "status": "passed"
 });
 formatter.scenario({
@@ -215,21 +215,21 @@ formatter.match({
   "location": "CategoriaSteps.que_exiten_tareas_asignadas_a_una_categoria()"
 });
 formatter.result({
-  "duration": 60094,
+  "duration": 67909,
   "status": "passed"
 });
 formatter.match({
   "location": "CategoriaSteps.filtro_por_esa_categoria()"
 });
 formatter.result({
-  "duration": 31794,
+  "duration": 39156,
   "status": "passed"
 });
 formatter.match({
   "location": "CategoriaSteps.tengo_las_tareas_asignadas_a_esa_categoria()"
 });
 formatter.result({
-  "duration": 35280,
+  "duration": 28418,
   "status": "passed"
 });
 formatter.scenario({
@@ -259,21 +259,21 @@ formatter.match({
   "location": "CategoriaSteps.que_no_exiten_tareas_asignadas_a_una_categoria()"
 });
 formatter.result({
-  "duration": 66551,
+  "duration": 76776,
   "status": "passed"
 });
 formatter.match({
   "location": "CategoriaSteps.filtro_por_esa_categoria()"
 });
 formatter.result({
-  "duration": 27799,
+  "duration": 29292,
   "status": "passed"
 });
 formatter.match({
   "location": "CategoriaSteps.no_tengo_tareas_filtradas()"
 });
 formatter.result({
-  "duration": 40534,
+  "duration": 39335,
   "status": "passed"
 });
 formatter.uri("persona.feature");
@@ -317,21 +317,21 @@ formatter.match({
   "location": "PersonaSteps.que_la_tarea_no_tiene_persona_asignada()"
 });
 formatter.result({
-  "duration": 103880,
+  "duration": 111854,
   "status": "passed"
 });
 formatter.match({
   "location": "PersonaSteps.le_asigno_una_nueva_persona()"
 });
 formatter.result({
-  "duration": 33807,
+  "duration": 42915,
   "status": "passed"
 });
 formatter.match({
   "location": "PersonaSteps.la_tarea_queda_asignada_a_una_nueva_persona()"
 });
 formatter.result({
-  "duration": 24824,
+  "duration": 38457,
   "status": "passed"
 });
 formatter.scenario({
@@ -361,21 +361,21 @@ formatter.match({
   "location": "PersonaSteps.que_la_tarea_ya_tiene_una_persona_asignada()"
 });
 formatter.result({
-  "duration": 53560,
+  "duration": 63886,
   "status": "passed"
 });
 formatter.match({
   "location": "PersonaSteps.le_asigno_una_nueva_persona()"
 });
 formatter.result({
-  "duration": 27006,
+  "duration": 33842,
   "status": "passed"
 });
 formatter.match({
   "location": "PersonaSteps.la_tarea_queda_asignada_con_ambas_personas()"
 });
 formatter.result({
-  "duration": 37534,
+  "duration": 34099,
   "status": "passed"
 });
 formatter.scenario({
@@ -405,21 +405,21 @@ formatter.match({
   "location": "PersonaSteps.que_la_tarea_tiene_una_persona_asignada()"
 });
 formatter.result({
-  "duration": 196010,
+  "duration": 67432,
   "status": "passed"
 });
 formatter.match({
   "location": "PersonaSteps.le_borro_la_persona_asignada()"
 });
 formatter.result({
-  "duration": 40093,
+  "duration": 42171,
   "status": "passed"
 });
 formatter.match({
   "location": "PersonaSteps.la_tarea_queda_sin_persona_asignada()"
 });
 formatter.result({
-  "duration": 30455,
+  "duration": 36821,
   "status": "passed"
 });
 formatter.scenario({
@@ -449,21 +449,21 @@ formatter.match({
   "location": "PersonaSteps.que_la_tarea_no_tiene_una_persona_asignada()"
 });
 formatter.result({
-  "duration": 48311,
+  "duration": 63575,
   "status": "passed"
 });
 formatter.match({
   "location": "PersonaSteps.le_borro_la_persona_asignada()"
 });
 formatter.result({
-  "duration": 20177,
+  "duration": 37254,
   "status": "passed"
 });
 formatter.match({
   "location": "PersonaSteps.no_permito_borrar_persona_asignada()"
 });
 formatter.result({
-  "duration": 29435,
+  "duration": 37326,
   "status": "passed"
 });
 formatter.scenario({
@@ -493,21 +493,21 @@ formatter.match({
   "location": "PersonaSteps.que_una_persona_tiene_tareas_asignadas()"
 });
 formatter.result({
-  "duration": 82067,
+  "duration": 76964,
   "status": "passed"
 });
 formatter.match({
   "location": "PersonaSteps.quiere_ver_sus_tareas_asignadas()"
 });
 formatter.result({
-  "duration": 37928,
+  "duration": 38323,
   "status": "passed"
 });
 formatter.match({
   "location": "PersonaSteps.muestro_las_tareas_asignadas_de_esa_persona()"
 });
 formatter.result({
-  "duration": 34470,
+  "duration": 36525,
   "status": "passed"
 });
 formatter.scenario({
@@ -537,21 +537,21 @@ formatter.match({
   "location": "PersonaSteps.que_una_persona_no_tiene_tareas_asignadas()"
 });
 formatter.result({
-  "duration": 61289,
+  "duration": 57707,
   "status": "passed"
 });
 formatter.match({
   "location": "PersonaSteps.quiere_ver_sus_tareas_asignadas()"
 });
 formatter.result({
-  "duration": 27992,
+  "duration": 39389,
   "status": "passed"
 });
 formatter.match({
   "location": "PersonaSteps.no_muestro_ninguna_tarea()"
 });
 formatter.result({
-  "duration": 35416,
+  "duration": 100883,
   "status": "passed"
 });
 });
