@@ -2,9 +2,9 @@
 
 [![Build Status](https://travis-ci.org/nicopaez/proyecto-base-memo1.svg?branch=master)](https://travis-ci.org/nicopaez/proyecto-base-memo1)
 
-Este proyecto es un ejemplo del uso de la herramienta Cucumber como medio de implementacion de la técnica BDD
+Aninfo - TP Grupal PSA - Grupo 8
 
-Para correr este ejemplo ejecutar:
+Para correr este proyecto ejecutar:
 
 ```
 mvn test
