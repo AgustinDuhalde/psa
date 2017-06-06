@@ -4,10 +4,15 @@ import java.util.*;
 
 public class Tarea {
 
+	private String nombre;
 	private ArrayList<Categoria> categorias = new ArrayList<Categoria>();
 	private ArrayList<Persona> personasAsignadas = new ArrayList<Persona>();
+
+	Tarea(String nombre) {
+		this.nombre = nombre;
+	}
  
-	public ArrayList<Categoria> getCategoria() {
+	public ArrayList<Categoria> getCategorias() {
 		return categorias;
 	} 
 

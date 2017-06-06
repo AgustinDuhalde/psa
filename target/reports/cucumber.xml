@@ -1,72 +1,72 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="12" time="0.112725">
-<testcase classname="Categoria de tarea" name="Asignar categoria a una tarea" time="0.111072">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="12" time="0.13182">
+<testcase classname="Categoria de tarea" name="Asignar categoria a una tarea" time="0.130035">
 <system-out><![CDATA[Dado que la tarea no tiene categoria........................................passed
 Cuando le asigno una nueva categoria........................................passed
 Entonces la tarea queda asignada a una nueva categoria......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Categoria de tarea" name="Asignar mas de una categoria a una tarea" time="0.000118">
+<testcase classname="Categoria de tarea" name="Asignar mas de una categoria a una tarea" time="0.000134">
 <system-out><![CDATA[Dado que la tarea ya tiene una categoria....................................passed
 Cuando le asigno una nueva categoria........................................passed
 Entonces la tarea queda asignada con ambas categorias.......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Categoria de tarea" name="Borro categoria de una tarea con categoria asignada" time="0.000165">
+<testcase classname="Categoria de tarea" name="Borro categoria de una tarea con categoria asignada" time="0.000183">
 <system-out><![CDATA[Dado que la tarea tiene una categoria.......................................passed
 Cuando le borro la categoria................................................passed
 Entonces la tarea queda sin categoria.......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Categoria de tarea" name="Borro categoria de una tarea sin categoria asignada" time="0.000131">
+<testcase classname="Categoria de tarea" name="Borro categoria de una tarea sin categoria asignada" time="0.000181">
 <system-out><![CDATA[Dado que la tarea no tiene una categoria....................................passed
 Cuando le borro la categoria................................................passed
 Entonces no permito borrar categoria........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Categoria de tarea" name="Filtro por categoria existente" time="0.000135">
+<testcase classname="Categoria de tarea" name="Filtro por categoria existente" time="0.000158">
 <system-out><![CDATA[Dado que exiten tareas asignadas a una categoria............................passed
 Cuando filtro por esa categoria.............................................passed
 Entonces tengo las tareas asignadas a esa categoria.........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Categoria de tarea" name="Filtro por categoria no existente" time="0.000145">
+<testcase classname="Categoria de tarea" name="Filtro por categoria no existente" time="0.000105">
 <system-out><![CDATA[Dado que no exiten tareas asignadas a una categoria.........................passed
 Cuando filtro por esa categoria.............................................passed
 Entonces no tengo tareas filtradas..........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Asignar persona a tarea" name="Asignar persona a una tarea" time="0.000193">
+<testcase classname="Asignar persona a tarea" name="Asignar persona a una tarea" time="0.000175">
 <system-out><![CDATA[Dado que la tarea no tiene persona asignada.................................passed
 Cuando le asigno una nueva persona..........................................passed
 Entonces la tarea queda asignada a una nueva persona........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Asignar persona a tarea" name="Asignar mas de una persona a una tarea" time="0.000132">
+<testcase classname="Asignar persona a tarea" name="Asignar mas de una persona a una tarea" time="0.000112">
 <system-out><![CDATA[Dado que la tarea ya tiene una persona asignada.............................passed
 Cuando le asigno una nueva persona..........................................passed
 Entonces la tarea queda asignada con ambas personas.........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Asignar persona a tarea" name="Borro persona asignada de una tarea con persona asignada" time="0.000146">
+<testcase classname="Asignar persona a tarea" name="Borro persona asignada de una tarea con persona asignada" time="0.000352">
 <system-out><![CDATA[Dado que la tarea tiene una persona asignada................................passed
 Cuando le borro la persona asignada.........................................passed
 Entonces la tarea queda sin persona asignada................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Asignar persona a tarea" name="Borro persona asignada de una tarea sin persona asignada" time="0.000138">
+<testcase classname="Asignar persona a tarea" name="Borro persona asignada de una tarea sin persona asignada" time="0.000122">
 <system-out><![CDATA[Dado que la tarea no tiene una persona asignada.............................passed
 Cuando le borro la persona asignada.........................................passed
 Entonces no permito borrar persona asignada.................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Asignar persona a tarea" name="Persona con tareas asignadas ve sus tareas" time="0.000152">
+<testcase classname="Asignar persona a tarea" name="Persona con tareas asignadas ve sus tareas" time="0.000146">
 <system-out><![CDATA[Dado que una persona tiene tareas asignadas.................................passed
 Cuando quiere ver sus tareas asignadas......................................passed
 Entonces muestro las tareas asignadas de esa persona........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Asignar persona a tarea" name="Persona sin tareas asignadas no ve ninguna tarea" time="0.000198">
+<testcase classname="Asignar persona a tarea" name="Persona sin tareas asignadas no ve ninguna tarea" time="0.000117">
 <system-out><![CDATA[Dado que una persona no tiene tareas asignadas..............................passed
 Cuando quiere ver sus tareas asignadas......................................passed
 Entonces no muestro ninguna tarea...........................................passed

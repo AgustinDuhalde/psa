@@ -4,7 +4,16 @@ import java.util.*;
 
 public class Categoria {
 
+	private String nombre;
 	private ArrayList<Tarea> tareas = new ArrayList<Tarea>();
+
+	Categoria(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getNombre(){
+		return nombre;
+	}
 
 	public ArrayList<Tarea> getTareas(){
 		return tareas;
