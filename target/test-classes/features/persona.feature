@@ -12,7 +12,7 @@ Característica: Asignar persona a tarea
   	Entonces la tarea queda asignada con ambas personas
 
   Escenario: Borro persona asignada de una tarea con persona asignada
-  	Dado que la tarea tiene una persona asignada
+  	Dado que la tarea ya tiene una persona asignada
   	Cuando le borro la persona asignada
   	Entonces la tarea queda sin persona asignada
 

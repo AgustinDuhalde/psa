@@ -4,7 +4,16 @@ import java.util.*;
 
 public class Persona {
 
+	private String nombre;
 	private ArrayList<Tarea> tareasAsignadas = new ArrayList<Tarea>();
+
+	Persona(String nombre){
+		this.nombre = nombre;
+	}
+
+	public String getNombre(){
+		return nombre;
+	}
 
 	public ArrayList<Tarea> getTareas(){
 		return tareasAsignadas;

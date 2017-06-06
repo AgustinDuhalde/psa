@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="fiuba.RunFeatureTest" time="0.015" tests="48" errors="0" skipped="0" failures="0">
+<testsuite name="fiuba.RunFeatureTest" time="0.033" tests="48" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
@@ -59,52 +59,52 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="Dado que la tarea no tiene categoria" classname="Escenario: Asignar categoria a una tarea" time="0.002"/>
+  <testcase name="Dado que la tarea no tiene categoria" classname="Escenario: Asignar categoria a una tarea" time="0.005"/>
   <testcase name="Cuando le asigno una nueva categoria" classname="Escenario: Asignar categoria a una tarea" time="0"/>
   <testcase name="Entonces la tarea queda asignada a una nueva categoria" classname="Escenario: Asignar categoria a una tarea" time="0"/>
   <testcase name="Escenario: Asignar categoria a una tarea" classname="Escenario: Asignar categoria a una tarea" time="0.001"/>
-  <testcase name="Dado que la tarea ya tiene una categoria" classname="Escenario: Asignar mas de una categoria a una tarea" time="0.001"/>
+  <testcase name="Dado que la tarea ya tiene una categoria" classname="Escenario: Asignar mas de una categoria a una tarea" time="0"/>
   <testcase name="Cuando le asigno una nueva categoria" classname="Escenario: Asignar mas de una categoria a una tarea" time="0"/>
   <testcase name="Entonces la tarea queda asignada con ambas categorias" classname="Escenario: Asignar mas de una categoria a una tarea" time="0"/>
   <testcase name="Escenario: Asignar mas de una categoria a una tarea" classname="Escenario: Asignar mas de una categoria a una tarea" time="0.001"/>
   <testcase name="Dado que la tarea tiene una categoria" classname="Escenario: Borro categoria de una tarea con categoria asignada" time="0"/>
-  <testcase name="Cuando le borro la categoria" classname="Escenario: Borro categoria de una tarea con categoria asignada" time="0"/>
+  <testcase name="Cuando le borro la categoria" classname="Escenario: Borro categoria de una tarea con categoria asignada" time="0.001"/>
   <testcase name="Entonces la tarea queda sin categoria" classname="Escenario: Borro categoria de una tarea con categoria asignada" time="0"/>
   <testcase name="Escenario: Borro categoria de una tarea con categoria asignada" classname="Escenario: Borro categoria de una tarea con categoria asignada" time="0.001"/>
-  <testcase name="Dado que la tarea no tiene una categoria" classname="Escenario: Borro categoria de una tarea sin categoria asignada" time="0"/>
+  <testcase name="Dado que la tarea no tiene una categoria" classname="Escenario: Borro categoria de una tarea sin categoria asignada" time="0.001"/>
   <testcase name="Cuando le borro la categoria" classname="Escenario: Borro categoria de una tarea sin categoria asignada" time="0"/>
   <testcase name="Entonces no permito borrar categoria" classname="Escenario: Borro categoria de una tarea sin categoria asignada" time="0"/>
-  <testcase name="Escenario: Borro categoria de una tarea sin categoria asignada" classname="Escenario: Borro categoria de una tarea sin categoria asignada" time="0.003"/>
-  <testcase name="Dado que exiten tareas asignadas a una categoria" classname="Escenario: Filtro por categoria existente" time="0.001"/>
+  <testcase name="Escenario: Borro categoria de una tarea sin categoria asignada" classname="Escenario: Borro categoria de una tarea sin categoria asignada" time="0.002"/>
+  <testcase name="Dado que exiten tareas asignadas a una categoria" classname="Escenario: Filtro por categoria existente" time="0"/>
   <testcase name="Cuando filtro por esa categoria" classname="Escenario: Filtro por categoria existente" time="0"/>
-  <testcase name="Entonces tengo las tareas asignadas a esa categoria" classname="Escenario: Filtro por categoria existente" time="0"/>
-  <testcase name="Escenario: Filtro por categoria existente" classname="Escenario: Filtro por categoria existente" time="0.001"/>
+  <testcase name="Entonces tengo las tareas asignadas a esa categoria" classname="Escenario: Filtro por categoria existente" time="0.001"/>
+  <testcase name="Escenario: Filtro por categoria existente" classname="Escenario: Filtro por categoria existente" time="0.002"/>
   <testcase name="Dado que no exiten tareas asignadas a una categoria" classname="Escenario: Filtro por categoria no existente" time="0"/>
   <testcase name="Cuando filtro por esa categoria" classname="Escenario: Filtro por categoria no existente" time="0"/>
-  <testcase name="Entonces no tengo tareas filtradas" classname="Escenario: Filtro por categoria no existente" time="0"/>
-  <testcase name="Escenario: Filtro por categoria no existente" classname="Escenario: Filtro por categoria no existente" time="0"/>
-  <testcase name="Dado que la tarea no tiene persona asignada" classname="Escenario: Asignar persona a una tarea" time="0"/>
-  <testcase name="Cuando le asigno una nueva persona" classname="Escenario: Asignar persona a una tarea" time="0.001"/>
+  <testcase name="Entonces no tengo tareas filtradas" classname="Escenario: Filtro por categoria no existente" time="0.001"/>
+  <testcase name="Escenario: Filtro por categoria no existente" classname="Escenario: Filtro por categoria no existente" time="0.002"/>
+  <testcase name="Dado que la tarea no tiene persona asignada" classname="Escenario: Asignar persona a una tarea" time="0.005"/>
+  <testcase name="Cuando le asigno una nueva persona" classname="Escenario: Asignar persona a una tarea" time="0"/>
   <testcase name="Entonces la tarea queda asignada a una nueva persona" classname="Escenario: Asignar persona a una tarea" time="0"/>
   <testcase name="Escenario: Asignar persona a una tarea" classname="Escenario: Asignar persona a una tarea" time="0"/>
   <testcase name="Dado que la tarea ya tiene una persona asignada" classname="Escenario: Asignar mas de una persona a una tarea" time="0"/>
   <testcase name="Cuando le asigno una nueva persona" classname="Escenario: Asignar mas de una persona a una tarea" time="0"/>
   <testcase name="Entonces la tarea queda asignada con ambas personas" classname="Escenario: Asignar mas de una persona a una tarea" time="0"/>
   <testcase name="Escenario: Asignar mas de una persona a una tarea" classname="Escenario: Asignar mas de una persona a una tarea" time="0.001"/>
-  <testcase name="Dado que la tarea tiene una persona asignada" classname="Escenario: Borro persona asignada de una tarea con persona asignada" time="0"/>
+  <testcase name="Dado que la tarea ya tiene una persona asignada" classname="Escenario: Borro persona asignada de una tarea con persona asignada" time="0"/>
   <testcase name="Cuando le borro la persona asignada" classname="Escenario: Borro persona asignada de una tarea con persona asignada" time="0"/>
   <testcase name="Entonces la tarea queda sin persona asignada" classname="Escenario: Borro persona asignada de una tarea con persona asignada" time="0"/>
   <testcase name="Escenario: Borro persona asignada de una tarea con persona asignada" classname="Escenario: Borro persona asignada de una tarea con persona asignada" time="0.001"/>
   <testcase name="Dado que la tarea no tiene una persona asignada" classname="Escenario: Borro persona asignada de una tarea sin persona asignada" time="0"/>
-  <testcase name="Cuando le borro la persona asignada" classname="Escenario: Borro persona asignada de una tarea sin persona asignada" time="0"/>
+  <testcase name="Cuando le borro la persona asignada" classname="Escenario: Borro persona asignada de una tarea sin persona asignada" time="0.001"/>
   <testcase name="Entonces no permito borrar persona asignada" classname="Escenario: Borro persona asignada de una tarea sin persona asignada" time="0"/>
-  <testcase name="Escenario: Borro persona asignada de una tarea sin persona asignada" classname="Escenario: Borro persona asignada de una tarea sin persona asignada" time="0"/>
-  <testcase name="Dado que una persona tiene tareas asignadas" classname="Escenario: Persona con tareas asignadas ve sus tareas" time="0"/>
+  <testcase name="Escenario: Borro persona asignada de una tarea sin persona asignada" classname="Escenario: Borro persona asignada de una tarea sin persona asignada" time="0.001"/>
+  <testcase name="Dado que una persona tiene tareas asignadas" classname="Escenario: Persona con tareas asignadas ve sus tareas" time="0.001"/>
   <testcase name="Cuando quiere ver sus tareas asignadas" classname="Escenario: Persona con tareas asignadas ve sus tareas" time="0"/>
   <testcase name="Entonces muestro las tareas asignadas de esa persona" classname="Escenario: Persona con tareas asignadas ve sus tareas" time="0"/>
-  <testcase name="Escenario: Persona con tareas asignadas ve sus tareas" classname="Escenario: Persona con tareas asignadas ve sus tareas" time="0"/>
-  <testcase name="Dado que una persona no tiene tareas asignadas" classname="Escenario: Persona sin tareas asignadas no ve ninguna tarea" time="0"/>
+  <testcase name="Escenario: Persona con tareas asignadas ve sus tareas" classname="Escenario: Persona con tareas asignadas ve sus tareas" time="0.001"/>
+  <testcase name="Dado que una persona no tiene tareas asignadas" classname="Escenario: Persona sin tareas asignadas no ve ninguna tarea" time="0.001"/>
   <testcase name="Cuando quiere ver sus tareas asignadas" classname="Escenario: Persona sin tareas asignadas no ve ninguna tarea" time="0"/>
-  <testcase name="Entonces no muestro ninguna tarea" classname="Escenario: Persona sin tareas asignadas no ve ninguna tarea" time="0"/>
-  <testcase name="Escenario: Persona sin tareas asignadas no ve ninguna tarea" classname="Escenario: Persona sin tareas asignadas no ve ninguna tarea" time="0.001"/>
+  <testcase name="Entonces no muestro ninguna tarea" classname="Escenario: Persona sin tareas asignadas no ve ninguna tarea" time="0.001"/>
+  <testcase name="Escenario: Persona sin tareas asignadas no ve ninguna tarea" classname="Escenario: Persona sin tareas asignadas no ve ninguna tarea" time="0.002"/>
 </testsuite>
