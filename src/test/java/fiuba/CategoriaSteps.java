@@ -12,7 +12,7 @@ import java.util.*;
 
 /*
 
-User storie a testear:
+User story a testear GDO5:
 
 "Como gerente de operaciones 
 Quiero poder catalogar tareas 
@@ -31,8 +31,8 @@ public class CategoriaSteps {
     private int tamanioAux;
     private ArrayList<Categoria> categoriasAux;
 
-    private void nuevaTarea() {
-        tarea = new Tarea("Test");
+    private void nuevaTarea(String nombre) {
+        tarea = new Tarea(nombre);
     }
 
     private void nuevaCategoria(){
@@ -48,9 +48,16 @@ public class CategoriaSteps {
         categoriasAux = new ArrayList();
     }
 
-    @Dado("^que la tarea no tiene categoria$")
-    public void que_la_tarea_no_tiene_categoria() throws Throwable {
-        nuevaTarea();
+    @Dado("^que la tarea \"(.*?)\" no tiene categoria$")
+    public void que_la_tarea_no_tiene_categoria(String nombreTarea) throws Throwable {
+        nuevaTarea(nombreTarea);
+    }
+
+    @Dado("^que la tarea \"(.*?)\" ya tiene una categoria$")
+    public void que_la_tarea_ya_tiene_una_categoria(String nombreTarea) throws Throwable {
+        nuevaTarea(nombreTarea);
+        categoria2 = new Categoria(nombreDeCategoria2);
+        asignoNuevaCategoria(categoria2, tarea);  
     }
 
     @Cuando("^le asigno una nueva categoria$")
@@ -64,22 +71,15 @@ public class CategoriaSteps {
        assertEquals(categoria.getTareas().get(0), tarea);
     }
 
-    @Dado("^que la tarea ya tiene una categoria$")
-    public void que_la_tarea_ya_tiene_una_categoria() throws Throwable {
-        nuevaTarea();
-        categoria2 = new Categoria(nombreDeCategoria2);
-        asignoNuevaCategoria(categoria2, tarea);  
-    }
-
     @Entonces("^la tarea queda asignada con ambas categorias$")
     public void la_tarea_queda_asignada_con_ambas_categorias() throws Throwable {
         assertTrue(tarea.getCategorias().contains(categoria));
         assertTrue(tarea.getCategorias().contains(categoria2));
     }
 
-    @Dado("^que la tarea tiene una categoria$")
-    public void que_la_tarea_tiene_una_categoria() throws Throwable {
-        nuevaTarea();
+    @Dado("^que la tarea \"(.*?)\" tiene una categoria$")
+    public void que_la_tarea_tiene_una_categoria(String nombreTarea) throws Throwable {
+        nuevaTarea(nombreTarea);
         nuevaCategoria();
         asignoNuevaCategoria(categoria, tarea);
     }
@@ -95,9 +95,9 @@ public class CategoriaSteps {
         assertTrue(tarea.getCategorias().size() == 0);
     }
 
-    @Dado("^que la tarea no tiene una categoria$")
-    public void que_la_tarea_no_tiene_una_categoria() throws Throwable {
-        nuevaTarea();
+    @Dado("^que la tarea \"(.*?)\" no tiene una categoria$")
+    public void que_la_tarea_no_tiene_una_categoria(String nombreTarea) throws Throwable {
+        nuevaTarea(nombreTarea);
         nuevaCategoria();
         tamanioAux = tarea.getCategorias().size();
     }
@@ -109,7 +109,7 @@ public class CategoriaSteps {
 
     @Dado("^que exiten tareas asignadas a una categoria$")
     public void que_exiten_tareas_asignadas_a_una_categoria() throws Throwable {
-        nuevaTarea();
+        nuevaTarea("");
         nuevaCategoria();
         asignoNuevaCategoria(categoria, tarea);
         nuevaListaDeCategorias();

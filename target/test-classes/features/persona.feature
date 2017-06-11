@@ -1,23 +1,23 @@
 # language: es
-Característica: Asignar persona a tarea
+Característica: Asignar persona a tarea (GDO4)
 
   Escenario: Asignar persona a una tarea
-  	Dado que la tarea no tiene persona asignada
+  	Dado que la tarea "Tarea 1" no tiene persona asignada
   	Cuando le asigno una nueva persona
   	Entonces la tarea queda asignada a una nueva persona
 
   Escenario: Asignar mas de una persona a una tarea
-  	Dado que la tarea ya tiene una persona asignada
+  	Dado que la tarea "Tarea 2" ya tiene una persona asignada
   	Cuando le asigno una nueva persona
   	Entonces la tarea queda asignada con ambas personas
 
   Escenario: Borro persona asignada de una tarea con persona asignada
-  	Dado que la tarea ya tiene una persona asignada
+  	Dado que la tarea "Tarea 3" ya tiene una persona asignada
   	Cuando le borro la persona asignada
   	Entonces la tarea queda sin persona asignada
 
   Escenario: Borro persona asignada de una tarea sin persona asignada
-  	Dado que la tarea no tiene una persona asignada
+  	Dado que la tarea "Tarea 4" no tiene una persona asignada
   	Cuando le borro la persona asignada
   	Entonces no permito borrar persona asignada
 

@@ -12,7 +12,7 @@ import java.util.*;
 
 /*
 
-User storie a testear:
+User storie a testear GDO4:
 
 "Como gerente de operaciones
 Quiero poder asignar tareas al personal
@@ -29,8 +29,8 @@ public class PersonaSteps {
     private int tamanioAux;
     private ArrayList<Tarea> tareasAux;
 
-    private void nuevaTarea() {
-        tarea = new Tarea("Test");
+    private void nuevaTarea(String nombre) {
+        tarea = new Tarea(nombre);
     }
 
     private void nuevaPersona(){
@@ -42,9 +42,9 @@ public class PersonaSteps {
         persona.asignarTarea(tarea);
     }
 
-    @Dado("^que la tarea no tiene persona asignada$")
-    public void que_la_tarea_no_tiene_persona_asignada() throws Throwable {
-        nuevaTarea();
+    @Dado("^que la tarea \"(.*?)\" no tiene persona asignada$")
+    public void que_la_tarea_no_tiene_persona_asignada(String nombreTarea) throws Throwable {
+        nuevaTarea(nombreTarea);
     }
 
     @Cuando("^le asigno una nueva persona$")
@@ -58,9 +58,9 @@ public class PersonaSteps {
         assertEquals(persona.getTareas().get(0), tarea);
     }
 
-    @Dado("^que la tarea ya tiene una persona asignada$")
-    public void que_la_tarea_ya_tiene_una_persona_asignada() throws Throwable {
-        nuevaTarea();
+    @Dado("^que la tarea \"(.*?)\" ya tiene una persona asignada$")
+    public void que_la_tarea_ya_tiene_una_persona_asignada(String nombreTarea) throws Throwable {
+        nuevaTarea(nombreTarea);
         persona2 = new Persona("Persona Test 2");
         asignoNuevaPersona(persona2, tarea);
     }
@@ -82,9 +82,9 @@ public class PersonaSteps {
         assertTrue(tarea.getPersonasAsignadas().size() == 0);
     }
 
-    @Dado("^que la tarea no tiene una persona asignada$")
-    public void que_la_tarea_no_tiene_una_persona_asignada() throws Throwable {
-        nuevaTarea();
+    @Dado("^que la tarea \"(.*?)\" no tiene una persona asignada$")
+    public void que_la_tarea_no_tiene_una_persona_asignada(String nombreTarea) throws Throwable {
+        nuevaTarea(nombreTarea);
         persona2 = new Persona("Persona Test 2");
         tamanioAux = tarea.getPersonasAsignadas().size();
     }
@@ -96,7 +96,7 @@ public class PersonaSteps {
 
     @Dado("^que una persona tiene tareas asignadas$")
     public void que_una_persona_tiene_tareas_asignadas() throws Throwable {
-        nuevaTarea();
+        nuevaTarea("");
         nuevaPersona();
         asignoNuevaPersona(persona, tarea);
     }
@@ -114,7 +114,7 @@ public class PersonaSteps {
 
     @Dado("^que una persona no tiene tareas asignadas$")
     public void que_una_persona_no_tiene_tareas_asignadas() throws Throwable {
-        nuevaTarea();
+        nuevaTarea("");
         nuevaPersona();
     }
 
